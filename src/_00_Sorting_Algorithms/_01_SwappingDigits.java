@@ -40,9 +40,18 @@ class _01_SwappingDigits {
 				a = arr[i];
 				arr[i] = arr[i+1];
 				arr[i+1] = a;
+				for(int e = i; e > 0; e--) {
+					if(arr[e] < arr[e-1]) {
+						int f;
+						f = arr[e];
+						arr[e] = arr[e-1];
+						arr[e-1] = f;
+					}
+				}
 			}
 		}
-	}
+}
+	
 	
 	//3. Complete the method so that it finds the middle number in the array.
 	//   *Hint* it helps to sort it first.
