@@ -33,6 +33,7 @@ public class SelectionSorter extends Sorter {
 				}
 			}
 		}
+		display.updateDisplay();
 
 	}
 }
