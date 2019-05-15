@@ -21,9 +21,7 @@ public class InsertionSorter extends Sorter {
 		for(int i = 1; i < array.length; i++) {
 			display.updateDisplay();
 			for(int j = i; j > 0; j--) {
-				display.updateDisplay();
 				if(array[j] < array[j-1]) {
-					display.updateDisplay();
 					int s = array[j];
 					array[j] = array[j-1];
 					array[j-1] = s;

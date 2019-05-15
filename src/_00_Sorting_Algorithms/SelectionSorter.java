@@ -23,17 +23,17 @@ public class SelectionSorter extends Sorter {
 		// 5. swap the array element at index with the array element at i
 		for (int i = 0; i < array.length - 1; i++) {
 			int index = i;
-			for(int j = i+1; j < array.length; j++) {
-				if(array[j] < array[index]) {
+			display.updateDisplay();
+			for (int j = i + 1; j < array.length; j++) {
+				if (array[j] < array[index]) {
 					index = j;
-					int s;
-					s = array[index];
-					array[index] = array[i];
-					array[i] = s;
 				}
 			}
+			int s;
+			s = array[index];
+			array[index] = array[i];
+			array[i] = s;
 		}
-		display.updateDisplay();
 
 	}
 }
